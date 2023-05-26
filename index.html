@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/icon.jpg" >
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/stayle.css" />
+
+
+
+    <title>GAMES SITE</title>
+  </head>
+  <body>
+    
+      <nav class="navbar navbar-expand-lg  py-3 container rounded-5 back  ">
+        <div class="container px-4">
+          <a class="navbar-brand " href="#"><img src="./image/png.png" class="w-25 pe-2" alt="">GAMES SITE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarNavDarkDropdown">
+
+            <ul class="navbar-nav ms-auto me-2"  id="drop1">
+              <li class="nav-item dropdown my-2">
+                <button class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  platform
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">pc</a></li>
+                  <li><a class="dropdown-item" href="#">browser</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav "  id="drop2">
+              <li class="nav-item dropdown">
+                <button class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  category
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">mmorpg</a></li>
+
+                  <li><a class="dropdown-item" href="#">shooter</a></li>
+                  <li><a class="dropdown-item" href="#">sailing</a></li>
+                  <li><a class="dropdown-item" href="#">permadeath</a></li>
+                  <li><a class="dropdown-item" href="#">superhero</a></li>
+                  <li><a class="dropdown-item" href="#">pixel</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    <div class="container d-flex align-items-center justify-content-center" id="es">
+      <div class="loading"></div>
+     </div>
+  
+    <div class="container py-5" id="intro">
+      <div class="row g-4" id="data"></div>
+    </div>
+
+    <div class="container py-5" id="category">
+      <div class="row g-4" id="data2"></div>
+    </div>
+
+    <div class="container py-5" id="plat">
+      <div class="row g-4" id="data3"></div>
+    </div>
+    <div class="container  my-5" >
+      <div class="col-md-10 mx-auto px-2 d-none detagames">
+      <header class="d-flex justify-content-between align-items-center ">
+        <h3 class="my-4">Details Game</h3>
+        <i class="fa fa-x" type="button" aria-label="Close" id="closing"></i>
+      </header>
+     <div class="row d-flex justify-content-center d-none g-4" id="detail">
+     
+     </div>
+
+    </div>
+    </div>
+
+<script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
