@@ -14,5 +14,4 @@ if(winScroll > navss ){
     $('nav').css({"position":"fixed","top":"0" ,"left":"5%"});
 } else {
 $('nav').css({"position":"static","top":"auto"});}
-console.log(winScroll);
 })
