@@ -6,7 +6,7 @@ import { idApi,targetId } from "./searchingApi.js";
 
 
 
-let navss =$(".navbar").offset().top
+let navss =$(".navbar").offset().top+100
 
 $(window).scroll(function(){
     let winScroll= $(window).scrollTop()
