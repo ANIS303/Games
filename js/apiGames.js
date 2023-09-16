@@ -24,7 +24,6 @@ export async function liveGame() {
   disp(gArr);
   loading.classList.add("d-none");
 
-  console.log(res);
   headId.classList.add("d-none");
 }
 
@@ -86,7 +85,6 @@ export async function gameCategory(nameG) {
   let res = await gategory.json();
   gameGat = res;
 
-  console.log(gameGat);
 
   targetDrop2();
   showGategoy(gameGat);
@@ -101,7 +99,6 @@ export function targetDrop2() {
   for (let i = 0; i < drop2?.length; i++) {
     drop2[i].addEventListener("click", (e) => {
       let id = e.target.innerHTML;
-      console.log(e.target.innerHTML);
       gameCategory(e.target.innerHTML);
       document.querySelector("#intro").classList.add("d-none");
       document.querySelector("#plat").classList.add("d-none");
@@ -144,7 +141,6 @@ export function gamePlat() {
   for (let i = 0; i < drop1?.length; i++) {
     drop1[i].addEventListener("click", (e) => {
       let id = e.target.innerHTML;
-      console.log(e.target.innerHTML);
       document.querySelector("#intro").classList.add("d-none");
       document.querySelector("#category").classList.add("d-none");
       document.querySelector(".detagames").classList.add("d-none");
@@ -172,7 +168,6 @@ export async function platApi(platF) {
   );
   let res = await platFild.json();
   data = res;
-  console.log(data);
   gamePlat();
   showPlat(data);
   targetId();

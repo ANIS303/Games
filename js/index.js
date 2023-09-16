@@ -16,4 +16,3 @@ if(winScroll > navss ){
 $('nav').css({"position":"static","top":"auto"});}
 console.log(winScroll);
 })
-console.log(navss);
